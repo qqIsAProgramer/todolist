@@ -21,14 +21,12 @@ public class TodoServiceImpl implements TodoService {
 
     @Resource
     private TodoMapper todoMapper;
-    @Resource
-    private TimeUtil timeUtil;
 
     @Override
     public CommonResponse<Todo> createTodo(String content) {
         Todo todo = new Todo();
         todo.setContent(content);
-        todo.setCreatedAt(timeUtil.timeFormat(new Date()));
+        todo.setCreatedAt(new Date());
         todo.setStatus(0);
 
         int affectedRow = todoMapper.createTodo(todo);

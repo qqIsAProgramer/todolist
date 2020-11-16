@@ -12,6 +12,10 @@ spring:
     url: jdbc:mysql://localhost:3306/todo?useUnicode=true&characterEncoding=utf8&useSSL=true&serverTimezone=Asia/Shanghai
     driver-class-name: com.mysql.cj.jdbc.Driver
 
+  jackson:
+    date-format: yyyy/MM/dd HH:mm:ss
+    time-zone: GMT+8
+
 logging:
   file:
     name: ./todo/todo.log
