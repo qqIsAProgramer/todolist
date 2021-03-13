@@ -1,4 +1,4 @@
-package com.homework.todolist.pojo;
+package homework.todolist.pojo;
 
 import lombok.Data;
 

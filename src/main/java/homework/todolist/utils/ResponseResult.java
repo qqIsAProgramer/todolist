@@ -1,6 +1,6 @@
-package com.homework.todolist.utils;
+package homework.todolist.utils;
 
-import com.homework.todolist.enums.ResponseEnum;
+import homework.todolist.enums.ResponseEnum;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 

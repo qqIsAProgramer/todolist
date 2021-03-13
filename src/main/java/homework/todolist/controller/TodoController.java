@@ -1,7 +1,7 @@
-package com.homework.todolist.controller;
+package homework.todolist.controller;
 
-import com.homework.todolist.pojo.Todo;
-import com.homework.todolist.utils.ResponseResult;
+import homework.todolist.pojo.Todo;
+import homework.todolist.utils.ResponseResult;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -51,7 +51,7 @@ public class TodoController {
      * @return
      */
     @GetMapping("/list")
-    public ResponseResult<List<Todo>> listTodo() {
+    public ResponseResult<List<Todo>> getTodoList() {
         return null;
     }
 

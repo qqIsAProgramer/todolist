@@ -1,4 +1,4 @@
-package com.homework.todolist.enums;
+package homework.todolist.enums;
 
 /**
  * @Author:
