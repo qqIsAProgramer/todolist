@@ -1,23 +1,33 @@
 package com.homework.todolist.pojo;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
-import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
 
 /**
- * @Author: qyl
- * @Date: 2020/11/10 11:25
+ * @Author:
+ * @Date:
  */
 @Data
 public class Todo {
 
+    /**
+     * 待办事项id
+     */
     private Integer id;
 
+    /**
+     * 待办事项内容
+     */
     private String content;
 
+    /**
+     * 待办事项状态
+     */
     private Integer status;
 
-    private Date createdAt;
+    /**
+     * 待办事项的创建时间
+     */
+    private Date createTime;
 }

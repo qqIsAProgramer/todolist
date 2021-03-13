@@ -1,46 +1,67 @@
 package com.homework.todolist.controller;
 
 import com.homework.todolist.pojo.Todo;
-import com.homework.todolist.response.CommonResponse;
-import com.homework.todolist.service.TodoService;
+import com.homework.todolist.utils.ResponseResult;
 import org.springframework.web.bind.annotation.*;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 /**
- * @Author: qyl
- * @Date: 2020/11/10 21:30
+ * @Author:
+ * @Date:
  */
 @RestController
 @RequestMapping("/todo")
 public class TodoController {
 
-    @Resource
-    private TodoService todoService;
-
+    /**
+     * 创建待办事项
+     * @param content 待办事项内容
+     * @return
+     */
     @PostMapping("/create")
-    public CommonResponse<Todo> createTodo(String content) {
-        return todoService.createTodo(content);
+    public ResponseResult<Todo> createTodo(String content) {
+        return null;
     }
 
-    @PostMapping("/updatecontent")
-    public CommonResponse updateContent(Integer id, String content) {
-        return todoService.updateContent(id, content);
+    /**
+     * 修改待办事项内容
+     * @param id 待办事项id
+     * @param content 新待办事项内容
+     * @return
+     */
+    @PostMapping("/updateContent")
+    public ResponseResult<Void> updateContent(Integer id, String content) {
+        return null;
     }
 
-    @PostMapping("/updatestatus")
-    public CommonResponse updateContent(Integer id) {
-        return todoService.updateStatus(id);
+    /**
+     * 更新状态
+     * @param id 待办事项id
+     * @return
+     * @apiNote 0代表未完成 1代表已完成
+     */
+    @PostMapping("/updateStatus")
+    public ResponseResult<Void> updateStatus(Integer id) {
+        return null;
     }
 
+    /**
+     * 获取所有的待办事项
+     * @return
+     */
     @GetMapping("/list")
-    public CommonResponse<List<Todo>> listTodo() {
-        return todoService.listTodo();
+    public ResponseResult<List<Todo>> listTodo() {
+        return null;
     }
 
+    /**
+     * 删除指定的待办事项
+     * @param id 待办事项id
+     * @return
+     */
     @DeleteMapping("/delete")
-    public CommonResponse<Todo> deleteTodo(Integer id) {
-        return todoService.deleteTodo(id);
+    public ResponseResult<Void> deleteTodo(Integer id) {
+        return null;
     }
 }

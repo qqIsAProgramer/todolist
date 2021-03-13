@@ -1,3 +1,2 @@
-# todolist
-基于springboot和mybatis写的待办事项小作业的后端<br>
-没啥亮点，应付工程概论作业
+# todolist 待办事项
+基于 SpringBoot+MyBatis 搭建的待办事项服务端
