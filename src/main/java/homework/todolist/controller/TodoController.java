@@ -2,6 +2,7 @@ package homework.todolist.controller;
 
 import homework.todolist.pojo.Todo;
 import homework.todolist.utils.ResponseResult;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 
@@ -37,6 +38,16 @@ public class TodoController {
      * @apiNote 0代表未完成 1代表已完成
      */
     public ResponseResult<Void> updateStatus(Integer id) {
+        return null;
+    }
+
+    /**
+     * 为待办事项添加图片
+     * @param id 待办事项id
+     * @param picture 图片文件
+     * @return 图片地址
+     */
+    public ResponseResult<String> addPicture(Integer id, MultipartFile picture) {
         return null;
     }
 

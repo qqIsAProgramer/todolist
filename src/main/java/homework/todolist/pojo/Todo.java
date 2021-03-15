@@ -27,7 +27,12 @@ public class Todo {
     private Integer status;
 
     /**
-     * 待办事项的创建时间
+     * 待办事项的图片
      */
-    private Date createTime;
+    private String picture;
+
+    /**
+     * 待办事项的更新时间
+     */
+    private Date updateTime;
 }
