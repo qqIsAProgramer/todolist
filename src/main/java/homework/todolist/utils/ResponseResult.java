@@ -4,10 +4,6 @@ import homework.todolist.enums.ResponseEnum;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-/**
- * @Author:
- * @Date:
- */
 @Data
 @AllArgsConstructor
 public class ResponseResult<T> {

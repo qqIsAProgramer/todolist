@@ -1,9 +1,5 @@
 package homework.todolist.enums;
 
-/**
- * @Author:
- * @Date:
- */
 public enum ResponseEnum {
     SUCCESS(1, "成功"),
     FAIL(0, "失败"),

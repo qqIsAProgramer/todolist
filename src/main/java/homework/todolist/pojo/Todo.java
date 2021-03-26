@@ -4,10 +4,6 @@ import lombok.Data;
 
 import java.util.Date;
 
-/**
- * @Author:
- * @Date:
- */
 @Data
 public class Todo {
 
